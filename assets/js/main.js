@@ -78,7 +78,7 @@
 				$sidebar.addClass('inactive');
 			});
 
-			breakpoints.on('>large', function() {
+			breakpoints.on('>=large', function() {
 				$sidebar.addClass('inactive');
 			});
 
