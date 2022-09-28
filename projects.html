@@ -25,14 +25,11 @@
 									<a href="about.html" class="logo">About |</a> -->
 									<div class="navig">
 											<a href="about.html" class="navig">    About </a>|
-											<a href="Projects.html" class="navig">Projects </a>|
+											<a href="projects.html" class="navig">Projects </a>|
 											<a href="talks.html" class="navig">Talks </a>|
 											<a href="tutorials.html" class="navig">Tutorials </a>|
 											<a href="about.html" class="navig">Publication </a>|
 											<a href="about.html" class="navig">Contact </a>
-
-
-
 									</div>
 
 									<ul class="icons">
@@ -52,57 +49,85 @@
 								<section>
 									<div class="posts">
 										<article>
-											<iframe width="100%" height="auto"
-											src="https://www.youtube.com/embed/Sdc8hIYkIXo">
-											</iframe>
+											<img src="images/Avtive_polyhedral_1.jpeg" alt="polyhedral scenes" width="100%" height="auto">
 											<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
-											<h3>Active Vision for Early Recognition of Human Actions</h3>
+											<h3>Active Polyhedral Scene Matching</h3>
 											<p align="justify">
-												We propose a method for early recognition of human actions, one that can take advantages of multiple cameras while satisfying the constraints due to limited communication bandwidth and processing power. Our method considers multiple cameras, and at each time step, it will decide the best camera to use so that a confident recognition decision can be reached as soon as possible. We formulate the camera selection problem as a sequential decision process, and learn a view selection policy based on reinforcement learning.
+												Matching Polyhedrals only based on visual input in an active fashion is far from trivial. In short My solution consists of four main modules: observation, feature extraction, comparison, active motion policy. Observation module receives a camera position and object ID from the Active Policy module and presents an image of the object. Feature extraction takes in the observation and creates informative features from it. Comparison module takes in those features and decides whether the two objects are the same. Such decision is then propagated to the Active Motion Policy where the next observation position is created.
 											</p>
 											<ul class="actions">
-												<li><a href="#" class="button small">More</a></li>
-											</ul>
-			
-										</article>
-										<article>
-											<iframe width="100%" height="auto"
-											src="https://www.youtube.com/embed/4QBrRNPiKEM">
-											</iframe>
-											<h3>ResNest: Split Attention Networks</h3>
-											<p align="justify">It is well known that featuremap attention and multi-path representation are important for visual recognition. In this paper, we present a modularized architecture, which applies the channel-wise attention on different network branches to leverage their success in capturing cross-feature interactions and learning diverse representations. Our design results in a simple and unified computation block, which can be parameterized using only a few variables. Our model, named ResNeSt, outperforms EfficientNet in accuracy and latency trade-off on image classification. </p>
-											<ul class="actions">
-												<li><a href="#" class="button small">More</a></li>
+												<li><a href="https://github.com/SajjadPSavoji/Active-Polyhedral-Scene-Matching/blob/main/Polyhedral_Active_Recognition.pdf" class="button small">Doc</a></li>
+												<li><a href="https://github.com/SajjadPSavoji/Active-Polyhedral-Scene-Matching" class="button small"><span class="label">Code</span></a></li>
 											</ul>
 										</article>
+
 										<article>
-											<iframe width="100%" height="auto"
-											src="https://www.youtube.com/embed/_baxF-9lBrE">
-											</iframe>
-											<h3>Chained Tracker</h3>
-											<p align="justify"> Existing Multiple-Object Tracking (MOT) methods either follow the tracking-by-detection paradigm to conduct object detection, feature extraction and data association separately, or have two of the three subtasks integrated to form a partially end-to-end solution. Going beyond these sub-optimal frameworks, we propose a simple online model named Chained-Tracker (CTracker), which naturally integrates all the three subtasks into an end-to-end solution (the first as far as we know). </p>
+											<img src="images/DCGAN3.jpeg" alt="Deep Convolution GAN" width="100%" height="auto">
+											<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
+											<h3>Deep Convolution Generative Adversarial Network (DCGAN)</h3>
+											<p align="justify">
+												Supervised learning with convolutional networks (CNNs) has seen huge adoption in computer vision applications. Comparatively, unsupervised learning with CNNs has received less attention. In this project, adopting from the original paper, I implement a deep convolutional generative adversarial networks (DCGANs), that have certain architectural constraints, and demonstrate that they are a strong candidate for unsupervised learning. Training on CFAR10, I show convincing evidence that our deep convolutional adversarial pair learns a hierarchy of representations from object parts to scenes in both the generator and discriminator.
+											</p>
 											<ul class="actions">
-												<li><a href="#" class="button small">More</a></li>
+												<li><a href="https://github.com/SajjadPSavoji/Deep-Convolutional-GAN/blob/master/NNDL_miniproj3_report.pdf" class="button small">Doc</a></li>
+												<li><a href="https://github.com/SajjadPSavoji/Deep-Convolutional-GAN" class="button small"><span class="label">Code</span></a></li>
 											</ul>
 										</article>
+
 										<article>
-											<iframe width="100%" height="auto"
-											src="https://www.youtube.com/embed/GdxE-gZ3Vks">
-											</iframe>
-											<h3>JAX Hands-on I</h3>
-											<p align="justify"> JAX is NumPy on the CPU, GPU, and TPU, with great automatic differentiation for high-performance machine learning research. This tutorial is the first episode of the JAX hands-on series I've developed for the Artificial Neural Network Course at University of Tehran. JAX is Autograd and XLA, brought together for high-performance numerical computing and machine learning research. It provides composable transformations of Python+NumPy programs: differentiate, vectorize, parallelize, Just-In-Time compile to GPU/TPU, and more. </p>
+											<img src="images/CTBike.jpeg" alt="CTBIKE Image" width="100%" height="auto">
+											<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
+											<h3>New York CitiBike Trip Histories</h3>
+											<p align="justify">
+
+												In recent years, Bike Sharing has
+												become popular in a growing list of cities around the world. The
+												NYC “CitiBike” bicycle sharing scheme went live in 2013, and has been expanding ever since,
+												both as measured by daily ridership as well as the expanding geographic
+												footprint incorporating a growing number of “docking
+												stations”. One problem that many bikeshare systems face is money. An increase
+												in the number of riders who want to use the system necessitates
+												that more bikes be purchased and put into service to accommodate
+												them. We seek to examine Citibike trip data
+												to extract meaningful relations and conclusions which will provide
+												insight for executive sectors. Our findings can be categorized under
+												three titles: usage trends, common locations, expansion policy.
+											</p>
 											<ul class="actions">
-												<li><a href="#" class="button small">More</a></li>
+												<li><a href="https://github.com/SajjadPSavoji/CitiBikeNYC/blob/main/DAV_Project%20Final%20Report.pdf" class="button small">Doc</a></li>
+												<li><a href="https://github.com/SajjadPSavoji/CitiBikeNYC" class="button small"><span class="label">Code</span></a></li>
 											</ul>
 										</article>
+
 										<article>
-											<iframe width="100%" height="auto"
-											src="https://www.youtube.com/embed/6jRdesbrFqE">
-											</iframe>
-											<h3>ISSUM Workshop</h3>
-											<p align="justify"> I presented a part of my master thesis at the ISSUM Workshop. Some of the details have been omitted for confidentiality. Will probably post a complete version once our publication is public. </p>
+											<img src="images/VAE3.jpeg" alt="VAE Image" width="100%" height="auto">
+											<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
+											<h3>Variational AutoEncoder(VAE)</h3>
+											<p align="justify">
+												VAE is a way to perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? It introduces a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. This works contributions is two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods.
+							
+											</p>
 											<ul class="actions">
-												<li><a href="#" class="button small">More</a></li>
+												<li><a href="https://github.com/SajjadPSavoji/Variational-Auto-Encoder/blob/master/NNDL_miniproj3_report.pdf" class="button small">Doc</a></li>
+												<li><a href="https://github.com/SajjadPSavoji/Variational-Auto-Encoder" class="button small"><span class="label">Code</span></a></li>
+											</ul>
+										</article>
+
+										<article>
+											<img src="https://i1.wp.com/www.adeveloperdiary.com/wp-content/uploads/2020/10/Machine-Translation-using-Recurrent-Neural-Network-and-PyTorch-adeveloperdiary.com_.jpg?resize=768%2C311" alt="LSTMLM Banner" width="100%" height="auto">
+											<!-- <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> -->
+											<h3> Sentence Generation with Long-Short-Term-Memory</h3>
+											<p align="justify">
+
+												In this project, a sentence generator is developed using LSTM modules.
+												 To optimize the final model, there are several aspects that can be optimized. Among those aspects,
+												  Hidden Dimension, Number of Layers, Embedding Dim, and Learning Rate was studied. n case studies other parameters of the model was fixed to ensure accurate comparision.
+
+
+											</p>
+											<ul class="actions">
+												<li><a href="https://github.com/SajjadPSavoji/Language_Modelling_LSTM/blob/main/Report/report.pdf" class="button small">Doc</a></li>
+												<li><a href="https://github.com/SajjadPSavoji/Language_Modelling_LSTM" class="button small"><span class="label">Code</span></a></li>
 											</ul>
 										</article>
 						
